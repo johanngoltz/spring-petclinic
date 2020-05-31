@@ -1,6 +1,6 @@
 FROM sapmachine:latest 
 RUN mkdir /opt/petclinic
 WORKDIR /opt/petclinic
-COPY ./target/*.jar .
+COPY ./target/*.jar ./petclinic.jar
 EXPOSE 8080/tcp
-CMD ["java", "-jar", "/opt/petclinic/*.jar"]
+CMD ["java", "-jar", "/opt/petclinic/petclinic.jar"]
