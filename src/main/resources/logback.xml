@@ -15,7 +15,6 @@
       <encoder class="net.logstash.logback.encoder.LogstashEncoder" />
   </appender>
   <root level="INFO">
-    <appender-ref ref="FILE" />
     <appender-ref ref="STDOUT" />
     <appender-ref ref="stash" />
   </root>
