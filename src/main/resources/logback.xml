@@ -9,7 +9,7 @@
   </appender>
   
   <appender name="stash" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
-      <destination>127.0.0.1:4560</destination>
+      <destination>${logging.logstash.address}</destination>
 
       <!-- encoder is required -->
       <encoder class="net.logstash.logback.encoder.LogstashEncoder" />
